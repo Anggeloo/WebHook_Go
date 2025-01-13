@@ -1,6 +1,13 @@
 # WebHook in Go 🚀
 This repository contains a simple implementation of a WebHook server built using the Go programming language. The server listens for incoming HTTP POST requests, processes JSON payloads, and responds with a simple message.
 
+## Project Structure 🗂️
+```
+.
+├── WebHook.go   # Main application file
+└── README.md    # Project documentation
+```
+
 ## Features ✨
 - Handles HTTP POST requests to the `/webhook` endpoint.
 - Parses and validates JSON payloads.
@@ -57,11 +64,3 @@ The server logs the received message:
 ```plaintext
 Message received: Hello from client
 ```
-
-## Project Structure 🗂️
-```
-.
-├── WebHook.go   # Main application file
-└── README.md    # Project documentation
-```
-
