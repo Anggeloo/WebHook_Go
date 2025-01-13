@@ -1,6 +1,13 @@
 # WebHook in Go 🚀
 This repository contains a simple implementation of a WebHook server built using the Go programming language. The server listens for incoming HTTP POST requests, processes JSON payloads, and responds with a simple message.
 
+## Project Structure 🗂️
+```
+.
+├── WebHook.go   # Main application file
+└── README.md    # Project documentation
+```
+
 ## Features ✨
 - Handles HTTP POST requests to the `/webhook` endpoint.
 - Parses and validates JSON payloads.
@@ -44,6 +51,16 @@ curl -X POST http://localhost:8080/webhook \
 -d '{"message": "Hello from client"}'
 ```
 
+### Example Request with PowerShell 🖥️
+If you're using PowerShell, use the following command:
+
+```powershell
+Invoke-WebRequest -Uri http://localhost:8080/webhook `
+    -Method POST `
+    -ContentType "application/json" `
+    -Body '{"message": "Hola desde PowerShell"}'
+```
+
 ### Example Response 📥
 ```json
 {
@@ -57,11 +74,3 @@ The server logs the received message:
 ```plaintext
 Message received: Hello from client
 ```
-
-## Project Structure 🗂️
-```
-.
-├── WebHook.go   # Main application file
-└── README.md    # Project documentation
-```
-
