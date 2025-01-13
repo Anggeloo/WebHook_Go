@@ -53,7 +53,7 @@ If you're using PowerShell, use the following command:
 Invoke-WebRequest -Uri http://localhost:8080/webhook `
     -Method POST `
     -ContentType "application/json" `
-    -Body '{"message": "Hola desde PowerShell"}'
+    -Body '{"message": "Hello from PowerShell"}'
 ```
 
 ### Example Response 📥
