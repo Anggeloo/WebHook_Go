@@ -1,4 +1,5 @@
 # WebHook in Go 🚀
+
 This repository contains a simple implementation of a WebHook server built using the Go programming language. The server listens for incoming HTTP POST requests, processes JSON payloads, and responds with a simple message.
 
 ## Project Structure 🗂️
@@ -15,22 +16,18 @@ This repository contains a simple implementation of a WebHook server built using
 - Responds with a JSON message.
 
 ## Prerequisites ✅
-
 Before running the application, ensure you have the following installed:
 
 - Go (version 1.16 or later)
 
 ## How to Run 🏃‍♂️
-
 1. Clone the repository:
-
    ```bash
    git clone https://github.com/Anggeloo/WebHook_Go.git
    cd WebHook_Go
    ```
 
 2. Build and run the application:
-
    ```bash
    go run WebHook.go
    ```
@@ -38,11 +35,9 @@ Before running the application, ensure you have the following installed:
 3. The server will start on `http://localhost:8080`.
 
 ## Testing the WebHook 🧪
+You can test the WebHook using tools like [Postman](https://www.postman.com/), `curl`, or PowerShell.
 
-You can test the WebHook using tools like [Postman](https://www.postman.com/) or `curl`.
-
-### Example Request 📤
-
+### Example Request with `curl` 📤
 Send a POST request to `http://localhost:8080/webhook` with a JSON payload:
 
 ```bash
